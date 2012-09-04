@@ -19,6 +19,14 @@ When the virtual machine has booted, you can access the JMeter instance on the f
 
     33.33.33.40
 
+To use the new JMeter server, you must tell the JMeter client that it exists. You can either modify the `remote_hosts` setting in the `jmeter.properties` file or pass the `-R` parameter when running JMeter.
+
+If you want to control your JMeter servers from the GUI, you must edit the `jmeter.properties` file.
+
+If you are running JMeter headless, you can simply pass a list of JMeter servers using the `-R` parameter:
+
+    jmeter -R33.33.33.40[,33.33.33.41,...]
+
 
 Author
 ------
