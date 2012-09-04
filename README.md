@@ -27,6 +27,8 @@ If you are running JMeter headless, you can simply pass a list of JMeter servers
 
     jmeter -R33.33.33.40[,33.33.33.41,...]
 
+See the [online documenation](http://jmeter.apache.org/usermanual/remote-test.html) for more information.
+
 
 Author
 ------
