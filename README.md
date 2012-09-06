@@ -3,6 +3,8 @@ Vagrant JMeter
 
 A basic JMeter server setup configured for use when simulating remote execution of test plans.
 
+JMeter needs a lot of memory to run, so you may have to up the default allocation of 1024 MB. Edit the `config.vm.customize` setting in the Vagrantfile to allocate more memory to the virtual machine.
+
 
 Installation
 ------------
@@ -28,10 +30,3 @@ If you are running JMeter headless, you can simply pass a list of JMeter servers
     jmeter -R33.33.33.40[,33.33.33.41,...]
 
 See the [online documenation](http://jmeter.apache.org/usermanual/remote-test.html) for more information.
-
-
-Author
-------
-
-Morten Wulff  
-<wulff@ratatosk.net>

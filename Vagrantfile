@@ -10,6 +10,9 @@ Vagrant::Config.run do |config|
   # attach network adapters
   config.vm.network :hostonly, '33.33.33.40', {:adapter => 2}
 
+  # jmeter needs heaps of memory
+  config.vm.customize ['modifyvm', :id, '--memory', 1024, '--name', 'Vagrant JMeter']
+
   # use puppet to provision packages
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = 'puppet/manifests'
