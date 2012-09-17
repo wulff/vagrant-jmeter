@@ -19,7 +19,9 @@ class jmeter::install {
     ensure => present,
   }
 
-  class { 'jmeter::server': }
+  class { 'jmeter::server':
+    server_ip => $jmeterip,
+  }
 }
 
 class jmeter::go {

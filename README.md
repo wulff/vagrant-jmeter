@@ -17,7 +17,7 @@ Installation
 Getting started
 ---------------
 
-When the virtual machine has booted, you can access the JMeter instance on the following IP address:
+When the virtual machine has booted, you can access the JMeter instance on the following IP address (you can modify the IP address by changing the value of the "ip" variable in the Vagrant file):
 
     33.33.33.40
 
